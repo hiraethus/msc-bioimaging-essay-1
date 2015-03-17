@@ -1,5 +1,7 @@
 \documentclass[12pt]{article}
-\usepackage{cite}
+\usepackage{hyperref}
+\usepackage[backend=biber,style=nature,hyperref=true]{biblatex}
+\addbibresource{essay.bib}
 
 \title{Can computer vision in medical imaging replace doctors?} % Replace with more suitable title
 \author{
@@ -28,7 +30,7 @@ Our new and exciting results are described in Section~\ref{results}.
 Finally, Section~\ref{conclusions} gives the conclusions.
 
 \section{Previous work}\label{previous work}
-A much longer \LaTeXe{} example was written by Gil~\cite{hamilton2014digital}.
+A much longer \LaTeXe{} example was written by Gi \textcite{hamilton2014digital}.
 
 \section{Results}\label{results}
 In this section we describe the results.
@@ -36,8 +38,6 @@ In this section we describe the results.
 \section{Conclusions}\label{conclusions}
 We worked hard, and achieved very little.
 
-\bibliographystyle{abbrv}
-\bibliography{essay}
-
+\printbibliography
 \end{document}
 This is never printed
