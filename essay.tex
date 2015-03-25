@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage{hyperref}
+\usepackage[table]{xcolor}
 \usepackage[backend=biber,style=authoryear,hyperref=true]{biblatex}
 \addbibresource{essay.bib}
 
@@ -19,6 +20,8 @@
 \begin{abstract}
 This is the paper's abstract \ldots
 \end{abstract}
+
+\listoftables
 
 \section{Introduction}
 In \citeyear{hamilton2014digital}, \citeauthor{hamilton2014digital} write in a review article about the success we 
@@ -112,6 +115,35 @@ Furthermore, the best algorithms used in investigative labs employ the use of ma
 data. In these cases, the expertise of pathologists would be required to provide the necessary training data for these 
 algorithms to perform optimally \parencite{webster2014whole}.
 
+\paragraph{Available packages}
+To date, there are a number of software packages for image analysis that target the field of histopathology and, more 
+generally, analysis of human tissue. A number of these are visible in Table~\ref{tab:software}.
+
+\begin{table}
+\label{tab:software}
+\begin{tabular}{|  l | l |}
+	\hline
+	Free/Open Source & (FOSS) / Commercial \\ \hline
+	ImageJ & Genoptix AQUA Technology \\
+	ImmunoRatio & Genie (GENetic Imagery Exploitation) \\
+	ImmunoMembrane & Aperio \\
+	& DEFINIENS TissueStudio \\
+	& INform from Caliper/Perkin Elmer \\ \hline
+\end{tabular}
+\caption{A table listing Free/Open Source Software (FOSS) and Commercial software used for stuff.}
+\end{table}
+
+\citeauthor{abramoff2004image} discusses the benefits of using open source software in a scientific environment, in 
+particular, ImageJ. ImageJ's development is driven by a community who both develop and use the software extensivly. The 
+authors of this article present the idea that when a novel piece of functionality is to be implemented or fixed then the 
+community can be asked for assistance. However, the example used by \citeauthor{abramoff2004image} shows how 
+it took two days for support for images five gigabytes in size in spite of community members suggesting a fix had been 
+provided within one day which was subsequently shown to be broken \parencite{abramoff2004image}.
+
+While the very dynamic nature of this Free/Open Source software can lead to innovation that will rapidly expand on the 
+functionality of these tools, it is unlikely that this kind of software would threaten the practise of clinical 
+pathology due the the brittle nature of the software and the fact that clinical practise should be reapeatable and 
+codified.
 
 \subsection{Stereology}
 Image processing provides an automated process for deriving reproducible and quantifiable metrics of the 
