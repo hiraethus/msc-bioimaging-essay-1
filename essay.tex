@@ -1,6 +1,5 @@
 \documentclass[12pt]{article}
 \usepackage{hyperref}
-\usepackage[table]{xcolor}
 \usepackage[backend=biber,style=authoryear,hyperref=true]{biblatex}
 \addbibresource{essay.bib}
 
@@ -20,8 +19,6 @@
 \begin{abstract}
 This is the paper's abstract \ldots
 \end{abstract}
-
-\listoftables
 
 \section{Introduction}
 In \citeyear{hamilton2014digital}, \citeauthor{hamilton2014digital} write in a review article about the success we 
@@ -157,6 +154,16 @@ Software released by these entities (as well as hardware) will be scrutinised un
 Procedure \parencite{fdadevices} to ensure there is evidence to prove that the software is safe as well as providing
 proof that the software functions as specified.
 
+\paragraph{Shortcomings of Image Analysis}
+\citeauthor{taylor2006quantification} points to the fact that some of the methods that are used in image processing, 
+while others convenient, have their limitations. For instance, immunohistochemistry can be used to apply multiple 
+stain types to one piece of tissue to, for instance, measure the presence of different antibodies.
+
+Varying levels of success can be observed in separating out these stains in scanned images for quantitative analysis. 
+In terms of brightfield imagery, unmixing of diaminobenzidine (DAB), or brown staining, from haematoxylin (H), or blue 
+staining, has been relatively successful. When unmixing brown, red and blue stains, 
+\citeauthor{taylor2006quantification} states that RGB values normally captured in TMA image do not segregate 
+successfully \parencite{taylor2006quantification}.
 
 
 \subsection{Stereology}
