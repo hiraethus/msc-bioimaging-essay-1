@@ -8,4 +8,4 @@
 *.dvi
 *.out
 *.run.xml
-
+*.lot
