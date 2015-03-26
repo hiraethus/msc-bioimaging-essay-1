@@ -3,7 +3,7 @@
 \usepackage[backend=biber,style=authoryear,hyperref=true]{biblatex}
 \addbibresource{essay.bib}
 
-\title{Can computer vision in medical imaging replace pathologists?} % Replace with more suitable title
+\title{Can computer vision in medical imaging replace clinical pathologists?} % Replace with more suitable title
 \author{
         Mr Michael J Jones \\
                 \em{MSc Bioinformatics and Computational Diagnostics}\\
@@ -23,18 +23,19 @@ This is the paper's abstract \ldots
 
 \section{Introduction}
 In \citeyear{hamilton2014digital}, \citeauthor{hamilton2014digital} write in a review article about the success we 
-will see in the world of pathology of digital pathology. It was predicted in the 1980s and the 1990s that the field of 
-pathology would be revolutionised by computer driven Image Analysis (IA) becoming a routine intervention in diagnosis 
+will see in the world of pathology of digital pathology. In the 1980s and the 1990s medical professionals and scientists that the field of 
+pathology would be revolutionised by computer driven Image Analysis (IA). They expected IA to become a routine intervention in diagnosis 
 of disease \parencite{hamilton2014digital}. However, this did not transpire. As an example, the method employed 
 at analysing histological tissues in the fields of research, pharmacology and in the diagnosis of disease by clinicians is 
-by visual inspection the tissue \parencite{kriete2005automated}.
+by visual inspection of tissue \parencite{kriete2005automated}.
 
-While the community as yet have been underwhelmed by progress in this field, the progress made in virtual microsopy 
+The community have so far been underwhelmed by the field of digital pathology, however, the progress made in virtual microsopy 
 means that we can now scan large numbers of image data which can be analysed using quantitative digital imaging 
 software \parencite{mccavigan2012digital}.
 
 This article attempts to give a short outline of whether it is conceivable for digital pathology, through specific 
-application of computer vision with medical imaging, to make the role of the doctor increasingly redundant.
+application of computer vision with medical imaging, to replace clinical pathologists and provide a more quantitative 
+evaluation in the diagnosis of disease.
 
 \section{The elements of histopathology}
 In both the fields of research and clinical pathology, examining the morphology and immunohistochemistry (the detection 
@@ -42,15 +43,15 @@ of antigens in a cell) have been crucial.
 
 \subsection{Staining}
 \label{sec:staining}
-Many novel and varied techniques have been developed in staining biological material in order to back up the 
+Researchers have developer many varied techniques  in staining biological material to back up the 
 field of histopathology. In the early 1940s, \citeauthor{coons1942demonstration} were the first to do this kind of 
 thing by demonstrating a pneumococcal antigen in tissue by the use of a fluorescent antibody which can be detected in 
 fluorescence microscopy \parencite{coons1942demonstration}.
 
 In the field of brightfield microscopy, methods such as Enzyme labeling have become successful. These are used where 
 the detection of molecules within cells can only be achieved by finding an enzyme for which it is a substrate. These 
-particular enzymes, when they come into contact with these substrates cause a `chromagenic' reaction. This means, a 
-coloured substance which is insoluble in water is given off which can then be observed under a light microscope 
+particular enzymes, when they come into contact with these substrates cause a `chromagenic' reaction. This means 
+that the reaction emits a coloured substance which is insoluble in water which can then be observed under a light microscope 
 \parencite[Ch.~2]{buchwalow2010immunohistochemistry} .
 
 Observing the presence of scores then gave rise to methods of scoring the presence or severity of a disease by visible 
@@ -94,7 +95,7 @@ Since 2007, \parencite{stathonikos2013going} in the Pathology Department at the 
 in the Netherlands have been scanning all of the tissue slides that have been produced for the purposes of archiving 
 and education. \parencite{hamilton2014digital} states that to maintain this level of data, there need to be content 
 management systems as well as robust hardware used to safely store the images. As an example, scanning 500 slides 
-a day could require 5 Terabytes (TB) of storage media over the course of a month \parencite{hamilton2014digital}.
+a day requires 5 Terabytes (TB) of storage media over the course of a month \parencite{hamilton2014digital}.
 
 %TODO expand on stuff about cloud
 Cloud infrastucture also allows the transmission of images to remote collaborators \parencite{webster2014whole}. Even 
@@ -110,7 +111,7 @@ better than the method of visual inspection and, in some cases would yield bette
 \parencite{dabbs2013diagnostic}.
 
 Furthermore, the best algorithms used in investigative labs employ the use of machine learning which require training 
-data. In these cases, the expertise of pathologists would be required to provide the necessary training data for these 
+data. In these cases, the expertise of pathologists is required to provide the necessary training data for these 
 algorithms to perform optimally \parencite{webster2014whole}.
 
 \paragraph{Available packages}
@@ -134,29 +135,29 @@ generally, analysis of human tissue. A number of these are visible in Table~\ref
 
 \paragraph{Free and Open Source software}
 \citeauthor{abramoff2004image} discusses the benefits of using open source software in a scientific environment, in 
-particular, ImageJ. ImageJ's development is driven by a community who both develop and use the software extensivly. The 
+particular, ImageJ. The open source community drives the development of ImageJ by both develop and use the software extensivly. The 
 authors of this article present the idea that when a novel piece of functionality is to be implemented or fixed then the 
 community can be asked for assistance. However, the example used by \citeauthor{abramoff2004image} shows how 
 it took two days for support for images five gigabytes in size in spite of community members suggesting a fix had been 
 provided within one day which was subsequently shown to be broken \parencite{abramoff2004image}.
 
 \paragraph{Commercial software}
-While the very dynamic nature of this Free/Open Source software can lead to innovation that will rapidly expand on the 
+While the dynamic nature of this Free/Open Source software can lead to innovation that will rapidly expand on the 
 functionality of these tools, an attribute which can be very appealing to the research community, it is unlikely that
-this kind of software would threaten the practise of clinical pathology due the the brittle nature of the software and
-the fact that clinical practise should be reapeatable and codified.
+this kind of software might threaten the practise of clinical pathology due the the brittle nature of the software and
+indicates that clinical practise should be reapeatable and codified.
 
 It remains for commercial entities to contribute to the field of digital pathology that could result in the automation of
 clinical practice. Given the size of the US market in terms of healthcare, it is appropriate to look to the FDA (the
-United States Food and Drug Administration) to see how these kinds of products would be regulated in order to gain some
+United States Food and Drug Administration) to see how these kinds of products would be regulated to gain some
 inside into how likely they will be adopted in the near future.
 
-Software released by these entities (as well as hardware) will be scrutinised under the Medical Device Classification
-Procedure \parencite{fdadevices} to ensure there is evidence to prove that the software is safe as well as providing
+Software released by these entities (as well as hardware) are scrutinised under the Medical Device Classification
+Procedure by the FDA \parencite{fdadevices} to ensure there is evidence to prove that the software is safe as well as providing
 proof that the software functions as specified.
 
 \paragraph{Shortcomings of Image Analysis}
-\citeauthor{taylor2006quantification} points to the fact that some of the methods that are used in image processing, 
+\citeauthor{taylor2006quantification} indicates that some of the methods that are used in image processing, 
 while others convenient, have their limitations. For instance, immunohistochemistry can be used to apply multiple 
 stain types to one piece of tissue to, for instance, measure the presence of different antibodies.
 
@@ -215,11 +216,11 @@ It appears that those in charge of formulating diagnosis will not become redunda
 of pathology, provided that they adopt new technologies and diversify their skills in line with the field. However, those 
 who are not involved in the analysis such as laboratory technicians will become in less demand if we continue to see 
 automation of laborious tasts such as immunohistochemical staining of samples. This automation will inevitably lead to 
-more repeatability in spite of the fact that, in some cases, automated in quantitative power is no more powerful than 
+more repeatability in spite of indicates that, in some cases, automated in quantitative power is no more powerful than 
 manually doing the same steps.
 
-The field of pathology is still evolving and, as such, so is the role of the pathologist. Undoubtedly, the role of the 
-pathologist today will be made redundant. This is not to say that the field will become fully automated but that the 
+The field of pathology is still evolving and, as such, so is the role of the pathologist. Undoubtedly, skills required to be a pathologist 
+change over time. This is not to say that the field will become fully automated but that the 
 laborious and menial tasks of pathology will be taken upon by automaton, allowing pathologists more time to involve 
 themselves in other aspects of their job.
 
@@ -233,8 +234,9 @@ who would maintain the IT infrastructure in the storage, retrieval and dissemina
 
 While we have seen automation previously in clinical pathology such as the establishing of immunostainers has not led 
 to the closing of clinical pathology departments in hospitals, it remains to be seen whether digital pathology's 
-contribution will be an aid or a replacement to this clinical practice. Furthermore, it remains to be seen whether 
-increasing of clinical pathology is desirable from an ethical point of view.
+contribution will be an aid or a replacement to this clinical practice. Furthermore, as more machine learning algorithms 
+are applied to digital pathology, clinical practitioners must decide whether they are appropriate and that there is 
+accountability for the behaviour of software and equipment.
 
 \printbibliography
 \end{document}
