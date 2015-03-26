@@ -3,7 +3,7 @@
 \usepackage[backend=biber,style=authoryear,hyperref=true]{biblatex}
 \addbibresource{essay.bib}
 
-\title{Can computer vision in medical imaging replace clinical pathologists?} % Replace with more suitable title
+\title{Can digital pathology replace clinical pathologists?} % Replace with more suitable title
 \author{
         Mr Michael J Jones \\
                 \em{MSc Bioinformatics and Computational Diagnostics}\\
@@ -17,13 +17,43 @@
 \maketitle
 
 \begin{abstract}
-%TODO
-This is the paper's abstract \ldots
+Digital Pathology, in the field of clinical pathology, underwhelmed medical professionals and scientists in the 1980s and 
+1990s in that it did not revolutionise pathology as much as was expected. This article discusses whether digital pathology, 
+could potentially replace the role of clinical pathologists.
+
+Immunohistochemical staining in pathology has already undergone automation with prototypical devices such as the 
+immunostainer in 1990 being created. Even though automation of staining occurs, pathologists are still required.
+
+An increasing interest and adoption of image analysis has been adopted in research however there has still been limited 
+adoption of digital pathology in clinical pathology where the majority of diagnoses are made via visual inspection.
+
+If digital pathology becomes integrated into clinical pathology, image management systems will need to be adopted and 
+maintained in order to save, retrieve and share images across the world. This task would need to be adopted by clinicians 
+or laboratory technicians.
+
+Image analysis software required as part of digital pathology is available as Free/OpenSource software (FOSS) and as 
+commercial products. Free software is unlikely to be adopted in practice due to its changeable nature and because there 
+are no concrete releases of free software that the FDA (Food and Drugs Agency) in the United States could uniquely test 
+for suitability. Commercial products, could be adopted in medical practise if approval is given by the FDA.
+
+Other elements of pathology such as stereology introduce more complexity to the field by assuming that the two-dimensional 
+slides analysed by microscopes and by computers are not sufficient for observing the morphology of a three-dimensional piece 
+of tissue. While methods such as these are introduced and implemented, it is unlikely that clinical pathologists can be replaced 
+by automated systems.
+
+There are also issues with automating the role of a clinical pathologist. Software must be developed with robust practises 
+must be used to ensure that it is well tested. Care must also be taken to ensure, with the advent of machine learning in 
+Image Analysis, that accountability always lies with a human and not with a machine.
+
+This article concludes that it is possible for digital pathology to replace the role of clinical pathologists as it is today. It remains to 
+be seen whether this is ethical and whether consequently there would be fewer clinical pathologists and whether there would be 
+fewer lab technicians.
+
 \end{abstract}
 
 \section{Introduction}
 In \citeyear{hamilton2014digital}, \citeauthor{hamilton2014digital} write in a review article about the success we 
-will see in the world of pathology of digital pathology. In the 1980s and the 1990s medical professionals and scientists that the field of 
+will see in the world of clinical pathology of digital pathology. In the 1980s and the 1990s medical professionals and scientists that the field of 
 pathology would be revolutionised by computer driven Image Analysis (IA). They expected IA to become a routine intervention in diagnosis 
 of disease \parencite{hamilton2014digital}. However, this did not transpire. As an example, the method employed 
 at analysing histological tissues in the fields of research, pharmacology and in the diagnosis of disease by clinicians is 
@@ -43,7 +73,7 @@ of antigens in a cell) have been crucial.
 
 \subsection{Staining}
 \label{sec:staining}
-Researchers have developer many varied techniques  in staining biological material to back up the 
+Researchers have developed many varied techniques  in staining biological material to back up the 
 field of histopathology. In the early 1940s, \citeauthor{coons1942demonstration} were the first to do this kind of 
 thing by demonstrating a pneumococcal antigen in tissue by the use of a fluorescent antibody which can be detected in 
 fluorescence microscopy \parencite{coons1942demonstration}.
@@ -81,9 +111,6 @@ process needed for these software to be adopted \parencite[Ch.~23]{dabbs2013diag
 While there has been great progress in digital microscopy with cytology and molecular screening techniques, it is 
 pertinent to take note that the majority of research, pharmacology and clinical diagnosis is achievd via visual 
 inspection alone \parencite[p.~24]{mccavigan2012digital}.
-
-\subsection{Compression of images}
-
 
 \subsection{Image Management}
 % discuss what happens when all the data starts getting scanned (hamilton et al 2014)
