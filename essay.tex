@@ -101,7 +101,7 @@ Cloud infrastucture also allows the transmission of images to remote collaborato
 if full automation of the workflow of pathologists is achieved as it stands today, the qualitative aspects of tissue 
 samples will be available for pathologists across the world, making more qualitative analyses possible.
 
-\subsection{Image Analysis}
+\subsection{Image Analysis} \label{sec:imageanalysis}
 Once images have been stored in a format that can be retrieved easily, Image Analysis (IA) can be applied to the 
 images. As mentioned in Section~\ref{sec:staining}, traditional methods of grading tissue samples can are inaccurate. 
 While Computer Aided Image Analysis (CAIA) might appear an obvious place to observe a case to show where digital 
@@ -187,6 +187,28 @@ stereology in this context as it implies that the distribution of a number of ev
 by a predefined distribution \parencite[p.~540, Ch.~23.]{suvarna2013bancroft}. This probabilistic approach might 
 detract from the repeatbility of results in the exercise and, as such, might not be by a clinical pathologist anyway.
 
+\section{The dangers of Automation}
+If we consider that full automation of clinical pathological practice can be automated through digital pathology in 
+terms of image analysis, we must also ask the question whether this is desirable.
+
+In the first instance, software are complex feats of engineering, bringing together systems which contain many 
+paths of execution and many states for them to be in. While we can marvel at the complexity of such systems, 
+as time progresses, the explosion in high-level programming languages and libraries for all kinds of domains including 
+image analysis means that the bar set for entry into the practise of writing na\"{i}ve software decreases.
+
+From this it becomes tempting for those who are outside of the field of software development to write software without 
+employing sound software engineering principles such as unit, component and functional testing. An investigation of a 
+medical electron accelerator called the Therac-25 shows how software that is written for medical applications without 
+testing can lead to near fatal consequences. In the case of the Therac-25, the software, written in assembler language 
+`evolved' over a number of years and was written by only one software developer \parencite{leveson1993investigation}.
+
+Another issue from the full automation of diagnosis in the field of clinical pathology is where systems begin to employ 
+the use of machine learning capabilities. While we discussed earlier in this document (see 
+Section~\ref{sec:imageanalysis}) that machine learning algorithms can be optimised by user intervention, 
+\citeauthor{matthias2004responsibility} discuss the case of systems that require no human intervention whose 
+`rules by which they act are not fixed' \parencite{matthias2004responsibility}. In such cases, it becomes increasingly
+difficult to determine with whom responsibility lies if anything goes wrong.
+
 \section{Conclusions}\label{conclusions}
 
 It appears that those in charge of formulating diagnosis will not become redundant with the advent of the digital age 
@@ -211,7 +233,8 @@ who would maintain the IT infrastructure in the storage, retrieval and dissemina
 
 While we have seen automation previously in clinical pathology such as the establishing of immunostainers has not led 
 to the closing of clinical pathology departments in hospitals, it remains to be seen whether digital pathology's 
-contribution will be an aid or a replacement to this clinical practice.
+contribution will be an aid or a replacement to this clinical practice. Furthermore, it remains to be seen whether 
+increasing of clinical pathology is desirable from an ethical point of view.
 
 \printbibliography
 \end{document}
